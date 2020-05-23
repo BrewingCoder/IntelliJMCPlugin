@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.brewingcoder.IntelliJMCPlugin</id>
+    <name>Minecraft Data File Generator</name>
+    <vendor email="scott@gscottsingleton.com" url="https://github.com/BrewingCoder">BrewingCoder</vendor>
+
+    <description><![CDATA[
+    Quickly generate json Minecraft data and other objects from templates.<br>
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+    <idea-version since-build="201.0"/>
+    <actions>
+
+        <group id="com.brewingcoder.mcmodgen" text="Minecraft Code Gen"
+               description="Generated Various JAVA and JSON artifacts automatically"
+               popup="true" >
+            <add-to-group group-id="EditMenu"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <action class="com.brewingcoder.mcmodgen.GenerateDataForBlock"
+                    id="com.brewingcoder.mcmodgen.GenerateDataForBlock"
+                    text="Data Files from Block Registry Line"/>
+            <action id="com.brewingcoder.mcmodgen.GenerateStairsFromBlock"
+                    class="com.brewingcoder.mcmodgen.GenerateStairsFromBlock"
+                    text="Stairs From Base Block Registry Line"/>
+            <action class="com.brewingcoder.mcmodgen.GenerateSlabFromBlock"
+                    id="com.brewingcoder.mcmodgen.GenerateSlabFromBlock"
+                    text="Slab From Base Block Registry Line"/>
+        </group>
+    </actions>
+</idea-plugin>

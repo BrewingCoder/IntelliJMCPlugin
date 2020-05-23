@@ -1,0 +1,15 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb"
+  ],
+  "key" : {
+    "b" : {
+      "item" : "MODID:SOURCEID"
+    }
+  },
+  "result" : {
+    "item" : "MODID:BLOCKID",
+    "count" : 6
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "MODID:block/BLOCKID" },
+    "type=top": { "model": "MODID:block/BLOCKID_top" },
+    "type=double": { "model": "MODID:block/SOURCEID" }
+  }
+}
