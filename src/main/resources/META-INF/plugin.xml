@@ -4,13 +4,12 @@
     <vendor email="scott@gscottsingleton.com" url="https://github.com/BrewingCoder">BrewingCoder/BrewDrinkCode/Brewer</vendor>
     <version>1.0</version>
     <description><![CDATA[
-    <h4>Minecraft Data File Generator</h4>
+     <p>The goal of this plugin is to make the initial generation of those JSON files quick and easy.  It
+    may not be exactly the end-goal of every mod developer but it puts most instances well on their path
+    to completion.</p>
     <p>The progression of Minecraft mod development has vastly increased the quantity and size of
     JSON data files associated with blocks.  Even a simple decorative cuboid now requires at least four
     JSON files, Five if it is craftable.</p>
-    <p>The goal of this plugin is to make the initial generation of those JSON files quick and easy.  It
-    may not be exactly the end-goal of every mod developer but it puts most instances well on their path
-    to completion.</p>
     <br>
     <b>There are several caveats for this to work properly:</b><br>
     1.  You must have your cursor on a line of JAVA that does the block registration.<br>
@@ -24,13 +23,17 @@
     3.  JSON to create slab block from cuboid block. Generates a new registration line of JAVA and all JSON files.<br>
     <br>
     Please <a href="https://github.com/BrewingCoder/IntelliJMCPlugin">visit Github</a> for issues, to comment, or to contribute.
-
     ]]></description>
+    <change-notes><![CDATA[
+        <b>v 1.0</b>
+        Initial build.  Supports building Json data files for blocks, building stairs & slabs from blocks.
+        ]]></change-notes>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
+
     <idea-version since-build="201.0"/>
     <actions>
 
