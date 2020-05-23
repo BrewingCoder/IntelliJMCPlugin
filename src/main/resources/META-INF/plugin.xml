@@ -1,10 +1,30 @@
 <idea-plugin>
     <id>com.brewingcoder.IntelliJMCPlugin</id>
     <name>Minecraft Data File Generator</name>
-    <vendor email="scott@gscottsingleton.com" url="https://github.com/BrewingCoder">BrewingCoder</vendor>
-
+    <vendor email="scott@gscottsingleton.com" url="https://github.com/BrewingCoder">BrewingCoder/BrewDrinkCode/Brewer</vendor>
+    <version>1.0</version>
     <description><![CDATA[
-    Quickly generate json Minecraft data and other objects from templates.<br>
+    <h4>Minecraft Data File Generator</h4>
+    <p>The progression of Minecraft mod development has vastly increased the quantity and size of
+    JSON data files associated with blocks.  Even a simple decorative cuboid now requires at least four
+    JSON files, Five if it is craftable.</p>
+    <p>The goal of this plugin is to make the initial generation of those JSON files quick and easy.  It
+    may not be exactly the end-goal of every mod developer but it puts most instances well on their path
+    to completion.</p>
+    <br>
+    <b>There are several caveats for this to work properly:</b><br>
+    1.  You must have your cursor on a line of JAVA that does the block registration.<br>
+    2.  The line must contain code like this:   <pre>MYBLOCK = someregistrationMethod("blockregname",...</pre><br>
+    3.  The plugin extracts 'MYBLOCK' as the code name you've given the block since it's immediately left of '='<br>
+    4.  The plugin extracts 'blockregname' as the registry name since it is in quotes.<br>
+    <br>
+    <b>Current Generations:</br>
+    1.  JSON for cuboid block. Generates blockstate,block model, item model, and loot_table files.<br>
+    2.  JSON to create stairs block from cuboid block.  Generates a new registration line of JAVA and all JSON files.<br>
+    3.  JSON to create slab block from cuboid block. Generates a new registration line of JAVA and all JSON files.<br>
+    <br>
+    Please <a href="https://github.com/BrewingCoder/IntelliJMCPlugin">visit Github</a> for issues, to comment, or to contribute.
+
     ]]></description>
     <depends>com.intellij.modules.platform</depends>
 

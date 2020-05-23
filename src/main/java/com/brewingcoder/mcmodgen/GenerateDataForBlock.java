@@ -47,23 +47,23 @@ public class GenerateDataForBlock extends EditorActionBase {
 
                     //BlockState
                     String sourceFile ="BLOCK_TEMPLATE_BLOCKSTATE.json";
-                    String destFile = baseResourcePath + "/blockstates/" + blockName + ".json";
-                    MakeProjectFile(sourceFile,destFile,projectName,registryName,blockName);
+                    String destFile = baseResourcePath + "/blockstates/" + registryName + ".json";
+                    MakeProjectFile(sourceFile,destFile,projectName,registryName,registryName);
 
                     //Model
                     sourceFile = "BLOCK_TEMPLATE_MODEL.json";
-                    destFile = baseResourcePath + "/models/block/" + blockName + ".json";
-                    MakeProjectFile(sourceFile,destFile,projectName,registryName,blockName);
+                    destFile = baseResourcePath + "/models/block/" + registryName + ".json";
+                    MakeProjectFile(sourceFile,destFile,projectName,registryName,registryName);
 
                     //ITEM MODEL
-                    sourceFile = "BLOCK_TEMPLATE_MODE_ITEM.json";
-                    destFile = baseResourcePath + "/models/item/" + blockName + ".json";
-                    MakeProjectFile(sourceFile,destFile,projectName,registryName,blockName);
+                    sourceFile = "BLOCK_TEMPLATE_MODEL_ITEM.json";
+                    destFile = baseResourcePath + "/models/item/" + registryName + ".json";
+                    MakeProjectFile(sourceFile,destFile,projectName,registryName,registryName);
 
                     //DATA: LOOT TABLE
                     sourceFile = "SLAB_TEMPLATE_LOOT_TABLE.json";
-                    destFile = baseDataPath + "/loot_tables/blocks/" + blockName + ".json";
-                    MakeProjectFile(sourceFile,destFile,projectName,registryName,blockName);
+                    destFile = baseDataPath + "/loot_tables/blocks/" + registryName + ".json";
+                    MakeProjectFile(sourceFile,destFile,projectName,registryName,registryName);
 
                     VirtualFileManager.getInstance().syncRefresh();
                 }
