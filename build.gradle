@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.brewingcoder'
-version '1.01'
+version '1.02'
 
 repositories {
     mavenCentral()
