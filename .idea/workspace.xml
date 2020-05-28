@@ -19,17 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59edc17b-8aea-4b22-aac1-0b8c4d4cf3be" name="Default Changelist" comment="fixed naming bug in DataForBlock action.&#10;updated plugin.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brewingcoder/mcmodgen/GenerateWallFromBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_BLOCKSTATE.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_LOOT_TABLE.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_MODEL_INVENTORY.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_MODEL_ITEM.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_MODEL_POST.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_MODEL_SIDE.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WALL_TEMPLATE_RECIPE.json" afterDir="false" />
+    <list default="true" id="59edc17b-8aea-4b22-aac1-0b8c4d4cf3be" name="Default Changelist" comment="added Wall data generation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brewingcoder/mcmodgen/GenerateSlabFromBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brewingcoder/mcmodgen/GenerateSlabFromBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +90,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="BrewingCoder &lt;scott@gscottsingleton.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cGq7m5aCrzvJqgbWOkhycDVAC9" />
@@ -118,7 +122,7 @@
       <recent name="D:\MinecraftCode\IntelliJMCPlugin\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Plugin">
+  <component name="RunManager" selected="Gradle.IntelliJMCPlugin [buildPlugin]">
     <configuration name="IntelliJMCPlugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -131,6 +135,82 @@
         <option name="taskNames">
           <list>
             <option value="buildPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IntelliJMCPlugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IntelliJMCPlugin [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IntelliJMCPlugin [patchPluginXml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="patchPluginXml" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IntelliJMCPlugin [verifyPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="verifyPlugin" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,6 +240,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.IntelliJMCPlugin [buildPlugin]" />
+        <item itemvalue="Gradle.IntelliJMCPlugin [clean]" />
+        <item itemvalue="Gradle.IntelliJMCPlugin [patchPluginXml]" />
+        <item itemvalue="Gradle.IntelliJMCPlugin [verifyPlugin]" />
+        <item itemvalue="Gradle.IntelliJMCPlugin [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590255561389</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added Wall data generation">
+      <created>1590288993140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590288993140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,8 +295,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="fixed naming bug in DataForBlock action.&#10;updated plugin.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed naming bug in DataForBlock action.&#10;updated plugin.xml" />
+    <MESSAGE value="added Wall data generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Wall data generation" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="657" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590179083279">
@@ -224,22 +318,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="218" key="Github.UntrackedFilesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590250970676" />
-    <state width="1877" height="177" key="GridCell.Tab.0.bottom" timestamp="1590288774521">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1590674371342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590288774521" />
-    <state width="1877" height="177" key="GridCell.Tab.0.center" timestamp="1590288774521">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590674371342" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1590674371341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590288774521" />
-    <state width="1877" height="177" key="GridCell.Tab.0.left" timestamp="1590288774521">
+    <state width="1877" height="207" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590674371341" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1590674371341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590288774521" />
-    <state width="1877" height="177" key="GridCell.Tab.0.right" timestamp="1590288774521">
+    <state width="1877" height="207" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590674371341" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1590674371342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590288774521" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590674371342" />
     <state width="1877" height="288" key="GridCell.Tab.1.bottom" timestamp="1590256187128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,13 +354,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590182934214" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590255568862">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590289035952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590255568862" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590289035952" />
     <state x="973" y="212" width="585" height="592" key="find.popup" timestamp="1590203749988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="212" width="585" height="592" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590203749988" />
+    <state x="774" y="364" key="git4idea.ui.GitTagDialog" timestamp="1590288957331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="774" y="364" key="git4idea.ui.GitTagDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590288957331" />
   </component>
 </project>

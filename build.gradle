@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.brewingcoder'
-version '1.02'
+version '1.03'
 
 repositories {
     mavenCentral()
@@ -20,7 +20,10 @@ intellij {
     version '2020.1.1'
 }
 patchPluginXml {
-    changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+//    changeNotes """
+//        <b>v 1.02</b>
+//        <p>Added the ability to generate Wall block data from registration line</p>
+//        <b>v 1.0</b>
+//        <p>Initial build.  Supports building Json data files for blocks, building stairs & slabs from blocks.</p>
+//      """
 }

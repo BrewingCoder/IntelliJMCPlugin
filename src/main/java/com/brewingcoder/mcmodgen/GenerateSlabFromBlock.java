@@ -11,7 +11,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
 
 import static com.brewingcoder.mcmodgen.Helpers.*;
-import static com.brewingcoder.mcmodgen.Helpers.MakeProjectFile;
 
 public class GenerateSlabFromBlock extends EditorActionBase {
 
@@ -69,7 +68,7 @@ public class GenerateSlabFromBlock extends EditorActionBase {
 
                     //TOP SLAB MODEL
                     sourceFile = "SLAB_TEMPLATE_MODEL_TOP.json";
-                    destFile = baseResourcePath + "/models/block/" + newRegistryName + "_inner.json";
+                    destFile = baseResourcePath + "/models/block/" + newRegistryName + "_top.json";
                     MakeProjectFile(sourceFile,destFile,projectName,registryName,newRegistryName);
 
                     //ITEM MODEL

@@ -25,9 +25,11 @@
     Please <a href="https://github.com/BrewingCoder/IntelliJMCPlugin">visit Github</a> for issues, to comment, or to contribute.
     ]]></description>
     <change-notes><![CDATA[
+        <b>v 1.03</b>
+        <p>fixed issues w/build.grade so it doesn't nuke my changelog :)</p>
         <b>v 1.02</b>
         <p>Added the ability to generate Wall block data from registration line</p>
-        <b>v 1.0</b>
+        <b>v 1.00</b>
         <p>Initial build.  Supports building Json data files for blocks, building stairs & slabs from blocks.</p>
         ]]></change-notes>
     <depends>com.intellij.modules.platform</depends>
